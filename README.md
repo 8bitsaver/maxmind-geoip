@@ -32,6 +32,20 @@
 
 [GeoLite2-Country-CSV.zip](https://cdn.jsdelivr.net/gh/8bitsaver/maxmind-geoip@release/GeoLite2-Country-CSV.zip)
 
+Or
+
+[GeoLite2-ASN.mmdb](https://testingcf.jsdelivr.net/gh/8bitsaver/maxmind-geoip@release/GeoLite2-ASN.mmdb)
+
+[GeoLite2-City.mmdb](https://testingcf.jsdelivr.net/gh/8bitsaver/maxmind-geoip@release/GeoLite2-City.mmdb)
+
+[GeoLite2-Country.mmdb](https://testingcf.jsdelivr.net/gh/8bitsaver/maxmind-geoip@release/GeoLite2-Country.mmdb)
+
+[GeoLite2-ASN-CSV.zip](https://testingcf.jsdelivr.net/gh/8bitsaver/maxmind-geoip@release/GeoLite2-ASN-CSV.zip)
+
+[GeoLite2-City-CSV.zip](https://testingcf.jsdelivr.net/gh/8bitsaver/maxmind-geoip@release/GeoLite2-City-CSV.zip)
+
+[GeoLite2-Country-CSV.zip](https://testingcf.jsdelivr.net/gh/8bitsaver/maxmind-geoip@release/GeoLite2-Country-CSV.zip)
+
 ## License
 
 Database and Contents Copyright (c) [MaxMind](https://www.maxmind.com), Inc.
