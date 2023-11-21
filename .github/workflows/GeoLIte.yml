@@ -3,7 +3,7 @@ name: Publish GeoLite2 mmdb/csv
 on:
   workflow_dispatch:
   schedule:
-    - cron: 0 1 */3 * *
+    - cron: '0 1 */3 * *'
 
 jobs:
   run:
@@ -54,7 +54,7 @@ jobs:
           files: |
             download/*.mmdb
             download/*.zip
-
+      
       - name: Remove old Releases
         uses: dev-drprasad/delete-older-releases@v0.3.2
         with:
@@ -62,3 +62,24 @@ jobs:
           delete_tags: true
         env:
           GITHUB_TOKEN: ${{ github.token }}
+
+      # - name: Upload to Latest Tag
+      #   uses: softprops/action-gh-release@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ github.token }}
+      #   with:
+      #     tag_name: latest
+      #     body: The latest.
+      #     draft: false
+      #     prerelease: true
+      #     files: |
+      #       download/*.mmdb
+      #       download/*.zip
+
+      - name: Remove old Workflow runs records
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 3
+          keep_minimum_runs: 3
