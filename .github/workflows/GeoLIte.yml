@@ -45,7 +45,7 @@ jobs:
           git push -f origin release
 
       - name: Upload to Releases
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v2.3.2
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:
